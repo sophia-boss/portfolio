@@ -38,11 +38,12 @@ h1{ font-size: 50px;}
 }
 .project{
     display:flex;
-    /* margin:.5in; */
-    width:3in;
-    height:3in;
+    margin:5px;
+    width:4in;
+    height:4in;
     stroke: gray;
     justify-content: center;
+    flex-direction: column;
 }
 .project:hover{
     background-color: black;
