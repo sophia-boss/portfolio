@@ -1,24 +1,45 @@
 
 <head>
+    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+    <script src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');</style>
 </head>
 
-<body style="display:flex; flex-direction: column; margin-left:2in; margin-right:2in;" >
+<body>
 
     <header class="header1">
-        <div style="display:flex; margin-top:100px;" >
+        <!-- <div style="display:flex; margin-top:100px;" >
             <img src = "assets/sophie.jpeg" alt="Sophie" class="img1">
+        </div> -->
+        <a href="About.html" style = "font-size: 45; font-weight: 200; margin-left: 20px;"> <p>Sophia Boss</p> </a>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; ">
+            <a href="Work.html" style="margin-right: 16px;"> <p>Workspace</p> </a>
+            <img src = "assets/workicon2.png" class="icon">
         </div>
-        <div style="display:flex; flex-direction: column;">
-            <a href="Work.html"> <p>Work</p> </a>
-            <a href="Play.html"> <p>Play</p> </a>
-            <a href="About.html"> <p>About</p> </a>
-            <a href="index.html"> <p>Home</p> </a>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; ">
+            <a href="Play.html" style="margin-right: 16px;"> <p>Playspace</p> </a>
+            <img src = "assets/play_icon1.png " style="margin-right: 20px;" class="icon">
         </div>
-    </header>
 
-    <div class = container1>
+        
+    </header>
+    <!-- <a-scene>
+        <a-sky src="assets/360_test.jpg"></a-sky>
+    </a-scene>  -->
+    <div id='vrview'></div>
+    <!-- <iframe src="https://storage.googleapis.com/vrview/2.0/embed?image=assets/360_test2.jpg&is_stereo=true">
+    </iframe> -->
+    
+    <div class="sidebar" style=" background-image: url('assets/sidebar_pinkblue.png'); background-position: 100px -45px; " >
+        <a href="#" class = "flipV" > <p>Contact</p> </a>
+        <a href="#" class = "flipV" > <p>About</p> </a>
+        <a href="#" class = "flipV" > <p>Resume</p> </a>
+        <a href="#" class = "flipV" > <p>Home</p> </a>
+        
+    </div>
+
+    <!-- <div class = container1>
         <h1>Hello, I'm Sophia</h1>
         <h2>//description</h2>
         <h1>Bodylogical</h1>
@@ -47,6 +68,9 @@
         <img src = "assets/Animation Studio Banner 2.jpg" alt="amsBanner" class="img2">
 
         <iframe src="https://player.vimeo.com/video/505938878" width="640" height="340" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    </div> -->
+
+
+
 </body>
 
