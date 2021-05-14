@@ -6,7 +6,7 @@ function onVrViewLoad() {
     image: 'assets/360_test2.jpg',
     preview:'https://raw.githubusercontent.com/sophia-boss/portfolio/main/assets/360_test2.jpg',
     is_stereo: false,
-    width: 1200,
+    width: 2000,
     height: 400
 
   });
