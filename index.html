@@ -9,73 +9,88 @@
 <body>
 
     <header class="header1">
-        <a href="About.html" style = "font-size: 45; font-weight: 200; margin-left: 20px;"> <p>Sophia Boss</p> </a>
-        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; ">
-            <a href="Work.html" style="margin-right: 16px;"> <p>Workspace</p> </a>
-            <!-- <img src = "assets/workicon2.png" class="icon"> -->
-        </div>
-        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; ">
-            <a href="Play.html" style="margin-right: 16px;"> <p>Playspace</p> </a>
-            <img src = "assets/play_icon1.png " style="margin-right: 20px;" class="icon">
-        </div>
-
-        
+        <a href="index.html"><img src = "assets/icons/house2.png" class="icon"></a>
+        <a href="Work.html"><img src = "assets/icons/star.png" class="icon"></a>
+        <a href="Play.html"><img src = "assets/icons/heart.png" class="icon"></a>
     </header>
-    <div class="sidebar" style=" background-image: url('assets/sidebar_pinkblue.png'); background-position: 100px -45px; " >
-        <a href="#" class = "flipV" > <p>Contact</p> </a>
-        <a href="#" class = "flipV" > <p>About</p> </a>
-        <a href="#" class = "flipV" > <p>Resume</p> </a>
-        <a href="#" class = "flipV" > <p>Home</p> </a>
+    
+    <div>
+        <!-- 360 image -->
+        <iframe allowfullscreen="true" scrolling="no" src="https://storage.googleapis.com/vrview/2.0/index.html?image=file:///Users/sophia/Desktop/COGS121/portfolio/assets/360_test2.jpg&amp;preview=https://raw.githubusercontent.com/sophia-boss/portfolio/main/assets/360_test2.jpg&amp;is_stereo=false&amp;" style="border: 0px;width: 100%;height:40%">
+            <html lang="en"><head>
+                <title>VR view</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+            <meta name="mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+            <link rel="stylesheet" href="style.css">
+            </head>
         
+            <body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+            <div id="error" class="dialog">
+            <div class="wrap">
+                <h1 class="title">Error</h1>
+                <p class="message">An unknown error occurred.</p>
+            </div>
+            </div>
+        
+            <div id="play-overlay">
+            <img src="images/ic_play_arrow_white_24dp.svg">
+            </div>
+        
+            <a id="watermark" href="http://g.co/vr/view" target="_blank">
+            <img src="images/ic_info_outline_black_24dp.svg">
+            </a>
+        
+            <script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+        WebVRConfig = {
+        BUFFER_SCALE: 0.5,
+        TOUCH_PANNER_DISABLED: false
+        };
+            </script>
+        
+            <script src="build/three.min.js"></script>
+            <script src="build/embed.min.js"></script><div style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: rgb(238, 238, 238); display: none;"><img src="images/loading.gif" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div><canvas width="1196" height="300" style="width: 598px; height: 150px;"></canvas><img class="webvr-button" draggable="false" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0ZGRkZGRiI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNNyAxNEg1djVoNXYtMkg3di0zem0tMi00aDJWN2gzVjVINXY1em0xMiA3aC0zdjJoNXYtNWgtMnYzek0xNCA1djJoM3YzaDJWNWgtNXoiLz4KPC9zdmc+Cg==" title="Fullscreen mode" style="position: absolute; width: 24px; height: 24px; background-size: cover; background-color: transparent; border: 0px; user-select: none; cursor: pointer; padding: 12px; z-index: 1; display: block; box-sizing: content-box; bottom: 0px; right: 0px;"><img class="webvr-button" draggable="false" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0ZGRkZGRiI+CiAgICA8cGF0aCBkPSJNMjAuNzQgNkgzLjIxQzIuNTUgNiAyIDYuNTcgMiA3LjI4djEwLjQ0YzAgLjcuNTUgMS4yOCAxLjIzIDEuMjhoNC43OWMuNTIgMCAuOTYtLjMzIDEuMTQtLjc5bDEuNC0zLjQ4Yy4yMy0uNTkuNzktMS4wMSAxLjQ0LTEuMDFzMS4yMS40MiAxLjQ1IDEuMDFsMS4zOSAzLjQ4Yy4xOS40Ni42My43OSAxLjExLjc5aDQuNzljLjcxIDAgMS4yNi0uNTcgMS4yNi0xLjI4VjcuMjhjMC0uNy0uNTUtMS4yOC0xLjI2LTEuMjh6TTcuNSAxNC42MmMtMS4xNyAwLTIuMTMtLjk1LTIuMTMtMi4xMiAwLTEuMTcuOTYtMi4xMyAyLjEzLTIuMTMgMS4xOCAwIDIuMTIuOTYgMi4xMiAyLjEzcy0uOTUgMi4xMi0yLjEyIDIuMTJ6bTkgMGMtMS4xNyAwLTIuMTMtLjk1LTIuMTMtMi4xMiAwLTEuMTcuOTYtMi4xMyAyLjEzLTIuMTNzMi4xMi45NiAyLjEyIDIuMTMtLjk1IDIuMTItMi4xMiAyLjEyeiIvPgogICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgwVjB6Ii8+Cjwvc3ZnPgo=" title="Virtual reality mode" style="position: absolute; width: 24px; height: 24px; background-size: cover; background-color: transparent; border: 0px; user-select: none; cursor: pointer; padding: 12px; z-index: 1; display: none; box-sizing: content-box; bottom: 0px; right: 48px;">
+            
+        
+        </body></html>
+        </iframe>
     </div>
-    <div id='vrview' alt="assets/360_test2.jpg" style="width:100%"></div>
-    <div class = container1>
-        <div style = "display: flex; flex-wrap: wrap;">
+    
+    <div class = container1 style="margin-top: 30px;">
+        <!-- <img src = "assets/icons/360-degrees2.png" style = "display: flex; align-self: center;" class="icon"> -->
+        <img src = "assets/icons/soph-avatar2.png" style = "display: flex; align-self: center;" class="bigIcon">
+        <div style = "display: flex; flex-wrap: wrap; align-self: center;">
             <h3>My name is Sophia Boss, I am an undergrad at UC San Diego majoring in Interdisciplinary Computing in the Arts and minoring in user interaction design and computer science.</h3>
         </div>
+
+        <!-- resume -->
         <div style = "display:flex; flex-direction: row; margin-top: 50px; justify-content: space-evenly;">
-            <div style="width: 300px; height: 500px; margin:10px;background-color: aqua;"></div>
-            <div style="width: 300px; height: 500px; margin:10px;background-color: aqua;"></div>
-            
+            <img src = "assets/sb_resume_1.jpeg" style="width:40%;">
         </div>
-        <div style = "margin-top: 50px;"><h3> It is taken for granted that technology has intersected aspects of nearly every discipline, and is constantly involved with our everyday lives. I create accessibile art by use of digital media, so an experience can be shared from one person to another with a touch of a fingertip.</h3></div>
+        <!-- download resume -->
+        <a href="https://drive.google.com/file/d/1b7KODXXkreX6vR8HGXl8D63OEOr4AG36/view?usp=sharing" target="_blank" ><img src = "assets/icons/log-in.png" class = icon style="margin-top: 50px;" ></a>
+        <div style = "margin-top: 50px;margin-left: 100px; margin-right: 100px; margin-bottom: 50px;"><h3> It is taken for granted that technology has intersected aspects of nearly every discipline, and is constantly involved with our everyday lives. I create accessibile art by use of digital media, so an experience can be shared from one person to another with a touch of a fingertip.</h3></div>
+
+        <!-- <img src = "assets/gifs/installation.gif" style="width:40%;"> -->
+        <div class=header2 style="margin-bottom: 50px;">
+            <div class=install ></div>
+            <div class=vr ></div>
+            <div class=clock ></div>
+        </div>
+
+        <div class= header1 style="margin-bottom:20px">
+            <a href="https://github.com/sophiaboss11" target="_blank" class=header1-element > <img src = "assets/icons/github.png" class=icon> </a>
+            <a href="https://www.linkedin.com/in/sophia-boss-31a830194/" target="_blank" class=header1-element > <img src = "assets/icons/linkedin.png" class=icon> </a>
+            <a href="https://www.instagram.com/purplecat._/" target="_blank" class=header1-element> <img src = "assets/icons/instagram.png" class=icon> </a>
+            <a href="https://vimeo.com/user100137623" target="_blank" class=header1-element> <img src = "assets/icons/vimeo.png" class=icon> </a>
+            <a href="https://purplecat.artstation.com/" target="_blank" class=header1-element> <img src = "assets/icons/artstation.png" class=icon> </a>
+            <a href="https://sketchfab.com/sophiaboss" target="_blank" class=header1-element> <img src = "assets/icons/sketchfab_icon.png" class=icon> </a>
+            <a href="mailto:sboss@ucsd.edu" class=header1-element> <img src = "assets/icons/envelope.png" class=icon> </a>
+        </div>
 
     </div>
-    
-    
-
-    <!-- <div class = container1>
-        <h1>Hello, I'm Sophia</h1>
-        <h2>//description</h2>
-        <h1>Bodylogical</h1>
-        <h2>//temp// Section explanations based on what type of work it is. Have a visual design, experience design, art, and animation section and a description for each.
-            * visual design description
-            * experience design description
-            * art description
-            * animation description
-        </h2> 
-    </div>
-
-    <div class="sketchfab-embed-wrapper" style="display:flex;"> 
-        <iframe title="Female Character Mesh" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1280" height="480" src="https://sketchfab.com/models/cffd59961b1a4cf18d7157b55dfd7d21/embed?ui_theme=dark"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/female-character-mesh-cffd59961b1a4cf18d7157b55dfd7d21?utm_medium=embed&utm_campaign=share-popup&utm_content=cffd59961b1a4cf18d7157b55dfd7d21" target="_blank" style="font-weight: bold; color: #1CAAD9; line-height: 1.5;"> Female Character Mesh </a> by <a href="https://sketchfab.com/sophiaboss?utm_medium=embed&utm_campaign=share-popup&utm_content=cffd59961b1a4cf18d7157b55dfd7d21" target="_blank" style="font-weight: bold; color: #1CAAD9; line-height: 1.5;"> sophiaboss </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=cffd59961b1a4cf18d7157b55dfd7d21" target="_blank" style="font-weight: bold; color: #1CAAD9; line-height: 1.5;">Sketchfab</a></p>
-    </div>
-
-    <div>
-        <iframe src="https://player.vimeo.com/video/483905549" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class = container1>
-        <h1>Wasteland</h1>
-        <h2>//temp// “Wasteland” is an interactive VR experiences that displays the positive and negative visual aspects of the earth, and shows how humans have negatively impacted it. 
-        </h2> 
-    </div>
-    <div style="display:flex; justify-content: center; flex-direction: column;">
-        <img src = "assets/Animation Studio Banner 2.jpg" alt="amsBanner" class="img2">
-
-        <iframe src="https://player.vimeo.com/video/505938878" width="640" height="340" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    </div> -->
-
-
 
 </body>
 

@@ -23,9 +23,12 @@ h3{ font-size: 20px;line-height: 35px; }
 h4{ font-size: 25px;line-height: 35px; font-weight: bolder; }
 
 .header1{
-    display:flex; flex-direction: row; justify-content:space-between; align-items:flex-end;
+    display:flex; flex-direction: row; justify-content:space-evenly; align-items:flex-end;
     align-items: center; 
     width:100%; height:70px;
+}
+.header2{
+    display: flex; flex-direction: row; justify-content: space-between; align-items: center; 
 }
 .sidebar{
     display:flex; flex-direction: column; justify-content: space-evenly; align-items: center;
@@ -40,9 +43,11 @@ h4{ font-size: 25px;line-height: 35px; font-weight: bolder; }
 
 .container1{
     display:flex;
-    margin: 1in;
+    /* margin: 1in; */
+    margin-left:1in; margin-right:1in;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 .container2{
     display:flex;
@@ -89,7 +94,9 @@ a:hover{
     /* margin:10px; */
   }
   
-  .icon {
-      width:40px;
-      height:40px;
-  }
+  .icon {width:40px;height:40px;display: flex;}
+  .bigIcon{width:100px;height:100px;}
+
+  .install {width: 200px;height: 350px; margin-left:20px; background-image: url('assets/gifs/installation.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
+  .vr {width: 200px;height: 350px; margin-left:20px;background-image: url('assets/gifs/zach-vr.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
+  .clock {width: 200px;height: 350px; margin-left:20px; background-image: url('assets/gifs/clock.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
