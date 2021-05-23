@@ -3,9 +3,9 @@ fonts:
 font-family: 'Open Sans', sans-serif;
 */
 
-*{
-    font-family: 'Open Sans', sans-serif;
-}
+/* blue: #5070DE */
+
+*{ font-family: 'Open Sans', sans-serif; }
 
 body {
     margin: 0; min-height: 100%; background-color: #fff;
@@ -27,53 +27,36 @@ h4{ font-size: 25px;line-height: 35px; font-weight: bolder; }
     align-items: center; 
     width:100%; height:70px;
 }
-.header2{
-    display: flex; flex-direction: row; justify-content: space-between; align-items: center; 
-}
+.header2{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+
 .sidebar{
     display:flex; flex-direction: column; justify-content: space-evenly; align-items: center;
     height:100%; width:100px;  
     position: fixed;
     top: 70px; 
-    right: 0px;
-}
-.header1-element{
-    display:flex;
-}
+    right: 0px;}
 
-.container1{
-    display:flex;
-    /* margin: 1in; */
-    margin-left:1in; margin-right:1in;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-.container2{
-    display:flex;
-}
-.project{
-    display:flex;
-    margin:5px;
-    width:4in;
-    height:4in;
-    stroke: gray;
-    justify-content: center;
-    flex-direction: column;
+.header1-element{display:flex;}
+
+.container1{ display:flex; margin-left:1in; margin-right:1in; flex-direction: column; text-align: center; align-items: center; }
+
+.container2{display:flex;}
+
+.container3{ display: flex;  flex-direction: column; text-align: center; align-items: center; }
+
+.project{ display:flex; margin:5px; width:4in; height:4in; stroke: gray; justify-content: center; flex-direction: column;
 }
 .project:hover{
     background-color: black;
     color: white;
 }
 
-a{
-    text-decoration: none;
-    font-size: 25px; color:black;
-}
+a{ text-decoration: none; font-size: 25px; color:black; }
+
 a:hover{
     font-size: 27px; 
     color: transparent;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    text-shadow: 0 0 5px rgba(56,157,230,90);
 }
 
 .img1{
@@ -81,11 +64,7 @@ a:hover{
     width:300px;
 }
 
-.img2{
-    /* border-radius: 10%; */
-    margin:10px;
-    width:500px;
-  }
+.img2{margin:10px;width:500px;}
 
   .flipV {
     -webkit-transform: rotate(-90deg);  /* Chrome, Opera 15+, Safari 3.1+ */
@@ -97,6 +76,12 @@ a:hover{
   .icon {width:40px;height:40px;display: flex;}
   .bigIcon{width:100px;height:100px;}
 
+  .icon:hover{width:47px;height:47px}
+
   .install {width: 200px;height: 350px; margin-left:20px; background-image: url('assets/gifs/installation.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
   .vr {width: 200px;height: 350px; margin-left:20px;background-image: url('assets/gifs/zach-vr.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
   .clock {width: 200px;height: 350px; margin-left:20px; background-image: url('assets/gifs/clock.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
+  .vuforia{width: 200px;height: 350px; margin-left:20px; background-image: url('assets/gifs/vuforiz.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
+  .wasteland{width: 640px;height: 340px;  background-image: url('assets/gifs/wasteland1.gif');background-position: center center; background-repeat: no-repeat;background-size: auto; display:flex; align-self: center;}
+
+  .work-element{display: flex; justify-content: center;  flex-direction: column ; flex-wrap: nowrap; margin-bottom:50px}
