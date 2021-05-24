@@ -81,7 +81,14 @@ a:hover{
   .install {width: 200px;height: 350px; margin-left:20px; background-image: url('assets/gifs/installation.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
   .vr {width: 200px;height: 350px; margin-left:20px;background-image: url('assets/gifs/zach-vr.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
   .clock {width: 200px;height: 350px; margin-left:20px; background-image: url('assets/gifs/clock.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
-  .vuforia{width: 200px;height: 350px; margin-left:20px; background-image: url('assets/gifs/vuforiz.gif');background-position: center center; background-repeat: no-repeat;background-size: cover;}
+  .vuforia{width: 200px;height: 350px; margin-left:20px; background-image: url('assets/gifs/vuforiz.gif');background-position: center center; background-repeat: no-repeat;background-size: 240 420;}
   .wasteland{width: 640px;height: 340px;  background-image: url('assets/gifs/wasteland1.gif');background-position: center center; background-repeat: no-repeat;background-size: auto; display:flex; align-self: center;}
 
   .work-element{display: flex; justify-content: center;  flex-direction: column ; flex-wrap: nowrap; margin-bottom:50px}
+
+  .work-img{ width:200px; height:200px; margin: 5px;}
+  .work-docs{width:30%; margin:25px;}
+  .hover{height:40px; width: default;}
+  .hover:hover{height:47px; width: default; background-color:#5070DE ;}
+
+  /* mark{font-weight: bolder; text-decoration-color: aqua; text-decoration: solid;} */
