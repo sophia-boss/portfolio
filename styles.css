@@ -74,7 +74,7 @@ a:hover{
   }
   
   .icon {width:40px;height:40px;display: flex;}
-  .bigIcon{width:100px;height:100px;}
+  .bigIcon{width:100px;height:auto;}
 
   .icon:hover{width:47px;height:47px}
 
