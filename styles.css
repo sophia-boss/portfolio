@@ -92,3 +92,12 @@ a:hover{
   .hover:hover{height:47px; width: default; background-color:#5070DE ;}
 
   /* mark{font-weight: bolder; text-decoration-color: aqua; text-decoration: solid;} */
+
+  .hide {
+    display: none;
+  }
+  /* .myDIV{ display: block;} */
+  .myDIV:hover + .hide {
+    display: block;
+    color: red;
+  }
